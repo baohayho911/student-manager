@@ -1,0 +1,160 @@
+.portal-panel {
+  margin: 32px 0;
+  padding: 24px;
+  border: 1px solid #dce5f1;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.portal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.portal-heading h2 {
+  margin-bottom: 6px;
+}
+
+.portal-heading p {
+  margin-bottom: 0;
+  color: #526580;
+}
+
+.portal-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.portal-tabs button {
+  padding: 11px 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #334155;
+  background: #f8fafc;
+  font: inherit;
+  cursor: pointer;
+}
+
+.portal-tabs button.active {
+  border-color: #2563eb;
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.portal-profile {
+  margin: 0;
+}
+
+.portal-profile > div {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.portal-profile dt {
+  color: #526580;
+}
+
+.portal-profile dd {
+  margin: 0;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.portal-search {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.portal-search .form-field {
+  flex: 1 1 240px;
+  margin-bottom: 0;
+}
+
+.portal-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.portal-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.portal-table th,
+.portal-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.portal-table th {
+  background: #f1f5fb;
+}
+
+.portal-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.portal-section-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.portal-section-info strong {
+  color: #1d4ed8;
+}
+
+.portal-section-info small {
+  color: #526580;
+}
+
+.portal-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.portal-note {
+  margin: 16px 0 0;
+  color: #526580;
+  font-size: 14px;
+}
+
+.portal-panel button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 650px) {
+  .portal-panel {
+    padding: 16px;
+  }
+
+  .portal-profile > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .portal-pagination {
+    justify-content: center;
+  }
+}

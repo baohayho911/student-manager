@@ -1,0 +1,31 @@
+# Frontend
+**/node_modules/
+**/dist/
+**/coverage/
+
+# Backend
+**/target/
+
+# Cau hinh IDE
+**/.idea/
+**/.vscode/
+*.iml
+
+# Bien moi truong va cau hinh rieng
+**/.env
+**/.env.*
+!**/.env.example
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml
+
+# Log va tep he thong
+*.log
+.DS_Store
+Thumbs.db
+
+# Ban sao luu co so du lieu
+**/backups/
+*.sql
+*.sql.gz
+*.sql.zip
